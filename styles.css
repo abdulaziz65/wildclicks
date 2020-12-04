@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    height: 0;
+}
+.header{
+    background-image: url(img/Adventure.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1366px;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    transition: all 0.5s;
+}
+.nav{
+    padding: 40px;
+    position: relative;
+    max-width: 100%;
+}
+.nav a{
+    text-decoration: none;
+    color: #ECECEC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: #ECECEC;
+    font-size: 27px;
+}
+.search{
+    margin: o;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    opacity: 90%;
+}
+input[name="r"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.slider .navigation{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #ECECEC;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-index{
+    opacity: 60%;
+    font-size: 16px;
+    line-height: 40px;
+}
+.slider-index:hover{
+    opacity: 90%;
+  }
+  #r1:checked ~ .s1{
+    font-size: 26px;
+    opacity: 90%;
+    transition: 0.3s;
+  }
+  #r2:checked ~ .s2{
+    font-size: 26px;
+    opacity: 90%;
+    transition: 0.3s;
+  }
+  #r3:checked ~ .s3{
+    font-size: 26px;
+    opacity: 90%;
+    transition: 0.3s;
+  }
+  #r4:checked ~ .s4{
+    font-size: 26px;
+    opacity: 90%;
+    transition: 0.3s;
+  }
+  #r5:checked ~ .s5{
+    font-size: 26px;
+    opacity: 90%;
+    transition: 0.3s;
+  }
+  
+  .date{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+  }
+  .wild{
+    font-size: 192px;
+    opacity: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #ECECEC;
+    position: absolute;
+    margin: 0;
+    top: 400px;
+    left: 160px;
+    transition: all 0.8s ease-in-out;
+    animation: slide 1s 1;
+  }
+  @keyframes slide{
+    0%{
+      left: -600px;
+    }
+    100%{
+      left: 160px;
+    }
+
+  }
+  .social-menu{
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+.social-menu a{
+  color: #ECECEC;
+  opacity: 80%;
+  font-size: 20px;
+  text-decoration: none;
+}
+  .social-menu i{
+    margin-left: 15px;
+  }
+  

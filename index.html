@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/brands.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/v4-shims.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <title>WildLife</title>
+</head>
+<body>
+    <main>
+        <div class="header" id="header">
+            <div class="nav">
+                <div class="menu">
+                    <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+                    <a href="index.html" id="logo">WildLife</a>
+                </div>
+                <div class="search">
+                    <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="navigation" id="navigation">
+                    <input type="radio" name="r" id="r1" checked  onclick="slideFunction()">
+                    <input type="radio" name="r" id="r2" onclick="slideFunction()">
+                    <input type="radio" name="r" id="r3" onclick="slideFunction()">
+                    <input type="radio" name="r" id="r4" onclick="slideFunction()">
+                    <input type="radio" name="r" id="r5" onclick="slideFunction()">
+
+
+                    <label for="r1" class="slider-index s1">01</label>
+                    <label for="r2" class="slider-index s2">02</label>
+                    <label for="r3" class="slider-index s3">03</label>
+                    <label for="r4" class="slider-index s4">04</label>
+                    <label for="r5" class="slider-index s5">05</label>
+                  </div>
+            </div>
+            <div class="header-text">
+                <h2 class="wild" id="header-text">Wild</h2>
+            </div>
+            <div class="date">
+                <p id="demo"></p>
+
+    
+            </div>
+            <div class="social-menu">
+                <a href=""><i class="fa fa-youtube"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook-square"></i></a>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script>
+      var header=document.getElementById("header");
+      var headerText=document.getElementById("header-text");
+      var navigation=document.getElementById("navigation")
+      var logo=document.getElementById("logo");
+      var r1=document.getElementById("r1");
+      var r2=document.getElementById("r2");
+      var r3=document.getElementById("r3");
+      var r4=document.getElementById("r4");
+      var r5=document.getElementById("r5");
+
+      function slideFunction(){
+        if(r1.checked==true){
+          header.style.backgroundImage="url(img/Adventure.jpg)"
+          headerText.style.fontWeight="normal";
+          headerText.style.color="#ECECEC";
+          headerText.style.top="410px";
+          headerText.style.left="160px";
+          headerText.innerHTML="Wild"
+          headerText.style.fontSize="192px";
+          headerText.style.lineHeight="200px";
+          navigation.style.color="#ECECEC";
+        }
+        if(r2.checked==true){
+          header.style.backgroundImage="url(img/image-2.jpg)"
+          headerText.innerHTML="LIONS"
+          headerText.style.fontWeight="700";
+          headerText.style.color="#ECECEC";
+          headerText.style.top="420px";
+          headerText.style.left="100px";
+          headerText.style.fontSize="190px";
+          navigation.style.color="rgba(0,0,0,0.5)";
+        }
+        if(r3.checked==true){
+          header.style.backgroundImage="url(img/image-3.jpg)"
+          headerText.innerHTML="Tigers"
+          headerText.style.color="#ECECEC";
+          headerText.style.fontWeight="700";
+          headerText.style.left="140px";
+          headerText.style.top="400px";
+          headerText.style.fontSize="212px";
+          navigation.style.color="rgba(0,0,0.5)";
+        }
+        if(r4.checked==true){
+          header.style.backgroundImage="url(img/image-4.jpg)"
+          headerText.innerHTML="Leopards"
+          headerText.style.fontWeight="700";
+          headerText.style.fontSize="140px";
+          headerText.style.color="rgba(0,0,0,0.3)";
+          headerText.style.left="140px";
+          headerText.style.top="140px";
+          navigation.style.color="rgba(0,0,0,0.5)";          
+        }
+        if(r5.checked==true){
+          header.style.backgroundImage="url(img/image-5.jpg)"
+          headerText.innerHTML="Wild<br>Fights"
+          headerText.style.color="#ECECEC";
+          headerText.style.fontWeight="700";
+          headerText.style.fontSize="150px";
+          headerText.style.lineHeight="130px";
+          headerText.style.left="140px";
+          headerText.style.top="440px";
+          navigation.style.color="#ECECEC";
+        }
+      }
+    </script>
+</body>
+</html>
